@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Page</title>
 </head>
-<body>
+<body><!--TO CREATE WEBPAGES WE USE HTML-->
 <!-- heading tag -->
     <h1>heading 1</h1>
     <h2>heading 1</h2> 
@@ -47,6 +47,13 @@
     Rajpura, Patiala<br>
     Punjab, India- 140401<br>
 </p>
+<hr><p>
+<!-- we use address tag to specify the authorship info of the article or the webpage -->
+<address>Mananjay &nbsp; &nbsp; &nbsp; Kumar Dubey<br>
+    Ho.No. 162, Sundar nagar<br>
+    Rajpura, Patiala<br>
+    Punjab, India- 140401<br></address></p>
+<hr>
 <hr>
 <em>This line is emphasized. It is used to emphasis the content applied within this element.</em><br>
 <hr>
@@ -54,7 +61,53 @@
 <!-- it defines the abbreviation for a phrase or longer word. this tag is used with title attribute -->
 <abbr title="Prime Minister">PM</abbr><br>
 <abbr title="Hypertext markup languagr">HTML</abbr><br>
+<!--ACRONYM TAG is used with the title attribute to contain a full  explanation of of an acronym ...just like <abbr>  -->
+    <acronym title="Indian Space Research Organization">ISRO</acronym><br>
 <p>My favorite color is <span style="color: blue">blue</span> and <span style="color:red">red</span>.</p>
-    
+<!-- bdo(bidirectional override) tag is used to overrides the current/default text direction. this tag
+ sets the direction of content within it to render on browser
+ from left to right or left to right  -->
+<bdo dir="ltr">Chitkara University</bdo><br>
+<bdo dir="rtl">Chitkara University</bdo>
+<!-- pre tag is used to so that the same thing will appear on the website -->
+ <pre>hello
+              ok
+ </pre>
+ <pre>
+    <!-- with the code tag ..the font(default monopause font) will appear the same on website -->
+ <code>
+    import java.util.*;
+    public static void main(){
+        int num1;
+        int num2;
+        scanner sc=new scanner();
+        System.out.println("Enter A number");
+        num1=sc.nextInt();
+        System.out.println("Enter A number");
+        num2=sc.nextInt();
+        int Res=num1+num2;
+        System.out.println("Results"+Res);
+    }
+ </code>
+ </pre>
+ <!-- we can also make a table from the pre tag -->
+  <pre>
+  ------------------------------------------------------------------
+  Name            Roll no.          Course           Semester
+  ------------------------------------------------------------------
+  Pallavi         1                 BE.CSE             3
+  Neha            2                  BSc.              3
+  Muskan          3                  BSc.              3
+  ------------------------------------------------------------------
+  </pre>
+  <!-- del tag is used to overwrite the text -->
+   This is the overwrite text using del tag <del>100</del>50.<br>
+   The discount is <del>10%</del>20%.<br>
+   <!-- The <ins> tag defines a text that has been inserted into a document. Browsers will usually underline inserted text. -->
+   <p>My favorite color is <del>blue</del> <ins>red</ins>!</p><hr>
+   <!-- <sup> tag defines superscript text(appears half above) -->
+    (A+B)<sup>2</sup>=A<sup>2</sup>+2AB+B<sup>2</sup><hr>
+    <!-- <sub> tag defines subscript(ppears half below)-->
+        2H<sub>2</sub>+O<sub>2</sub>=2H<sub>2</sub>O<br>
 </body>
 </html>
