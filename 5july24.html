@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form tags</h1>
+    <!--
+     form tag is used to create HTML form user input
+     <form action="/data_input.java" method="get"> //(by  default=get)
+        get ---not secured
+        post---secured                 
+     -->
+        <!-- text input  -->
+        <form action="#" method="post" >  
+            <!-- # is used for current page -->
+             User Name :<input type="text" name="uname" id="uid"/><br><br>5
+             Password :<input type="password" name="pass" id="pid"><br><br>
+            <!-- for multiline input use textarea -->
+             Address : 
+             <textarea type="text" rows="5" cols="=20"></textarea><br><br>
+             <!-- Radio buttons -->
+             Gender:<br>
+             <input type="radio" name="gen" value="M">Male<br>
+             <input type="radio" name="gen" value="F">Female<br>
+             <input type="radio" name="gen" value="O">Other<br>
+             <!-- if we want to select mulitple options (just make the names different-->
+              Gender:(muliple options can be selected)<br>
+             <input type="radio" name="gen1" value="M">Male<br>
+             <input type="radio" name="gen2" value="F">Female<br>
+             <input type="radio" name="gen3" value="O">Other<br>
+             <!-- Checkbox is used to for multiple options to be selected-->
+              Education:<br>
+              <input type="checkbox" name="ten" value="tenth">10th<br>
+              <input type="checkbox" name="twel" value="tenth">12th<br>
+              <input type="checkbox" name="ug" value="tenth">Graduate<br>
+              <input type="checkbox" name="pg" value="tenth">PG<br>
+              <input type="checkbox" name="dr" value="tenth">Dr<br>
+              <!-- Drop down menu -->
+               Color Choice : <br>
+               <select name="color">
+                <option value="r">Red</option>
+                <option value="g">Green</option>
+                <option value="o">Orange</option>
+                <option value="b">Blue</option>
+                <option value="W">White</option>
+                <option value="B">Black</option>
+               </select><br><br>
+               Attach the file :
+               <input type="file">
+               <br><br>
+
+            <!-- button are of three types submit, reset, plain -->
+             <input type="submit" value="OK" name="sub1" id="sub1">
+              
+        </form>
+        <!-- iframe is used to display a nested page -->
+         <h1>This is my first frame</h1>
+         <iframe src="https://www.javapoint.com/" height="900" width="900"></iframe>
+         <h1>This is my second frame</h1>
+         <iframe src="https://www.myntra.com/" height="9000" width="900"></iframe>
+
+
+        
+    
+</body>
+</html>
