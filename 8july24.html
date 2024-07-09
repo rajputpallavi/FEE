@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- id(#) is unique..class(.) is not unique -->
+     <!-- universal selctor(*) -->
+     <!--
+     Selectors 
+     1.Simple selector
+            Tag selector(tag name)
+            class selector(.classname)
+            id selector(#id)
+            universal selector(*)
+     2.combined selector
+            descendent selector(div with tag name)
+            child selector(div with > tagname)
+            adjacent sibling selector(tag name + tag name)
+            general sibling (tag name ~ tag name)
+     3.pseudo class selector
+            :hover
+            :active
+            :focus
+            :nth child
+            :last child
+            :visited
+    4.pseudo element selector
+            ::before
+            ::after
+            ::first line
+            ::first letter
+    5. Attribute Selector
+            -- to highlight internal link/external link
+-->
+    <style>
+     /*   h1{
+            background-color: lightblue;
+        }
+            */
+        .h1class{
+        background-color: lightblue;
+        }
+        #h2id{
+            background-color: lightpink;
+        }
+        *{color:red;}
+        div h1{
+            background-color: aqua;
+        }
+        div >h2{
+            background-color: green;
+        }
+        h1 + h2{
+            background-color: burlywood;
+        }
+        h1 ~ h2{
+            background-color: blue;
+        }
+        #btnid:hover{
+            background-color: grey;
+        }
+        #btnid2:active{
+            background-color: grey;
+        }
+
+        input:focus{
+            background-color: aqua;
+        }
+            
+        p:nth-child(2n+1){
+            background-color: red;
+        }
+        /*a:visited{
+            background-color: blue;
+        }*/
+        a:visited{
+            background-color: blueviolet;
+        }
+
+        #temp::before{
+            content: "before p tag";
+            display: inline-block;
+            border-radius: 20px;
+            width:20px;
+            height:20px;
+            background-color: cadetblue;
+        }
+        #temp::after{
+            content: "after p tag";
+        }
+        #temp2::first-letter{
+            background-color: blueviolet;
+        }
+        #temp3::first-line{
+            background-color: blueviolet;
+        }
+        a[href^="https"]{
+            background-color: blueviolet;
+        }
+        input[type="password"]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="####">Internal link1</a><br>
+    <a href="https://www.google.com">External link1</a><br>
+    <a href="####">Internal link2</a><br>
+    <a href="https://www.youtube.com">External link2</a><br>
+    name-<input type="text"><br>
+    email-<input type="email"><br>
+    password-<input type="password">
+   
+
+    <p id="temp">welcome to css class</p>
+    <p >welcome to css class</p>
+    <p id="temp">welcome to css class</p>
+    <p id="temp2">welcome to css class</p>
+    <p id="temp3">welcome to css class</p>
+    <p>welcome to css class</p>
+<h1 class="h1class">Tag Selector</h1>
+<h1>Tag Selector</h1>
+<h2 id="h2id">Tag Selector</h2>
+<h1 class="h1class">Tag Selector</h1>
+
+
+<div>
+    <h1> 1. Descendent Selector</h1>
+    <h2>  1. Descendent Selector </h2>
+    <div><h1> 1. Descendent Selector</h1>
+        <h2>  1. Descendent Selector </h2>
+    <section>
+        <h1> 1. Descendent Selector</h1>
+    <h2>  1. Descendent Selector </h2>
+    </section></div>
+
+    <button id="btnid"> 
+        Click here
+    </button><br>
+
+    <button id="btnid2"> 
+        Click here
+    </button><br>
+    <input type="text">
+<br>
+<p> 1</p>
+  <p>2</p>
+  <p>3</p>  
+  <p>4</p>
+  <p>5</p>
+  <a href="##">Random link</a>
+   
+
+
+</div>
+</body>
+</html>
