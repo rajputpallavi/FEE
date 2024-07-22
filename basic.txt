@@ -1,0 +1,41 @@
+CSS selector:
+    CSS element selector
+    CSS Id selector [(#) for id..it is unique]
+    CSS Class Selector [(.)class is not unique] 
+    CSS universal selector [universal selctor(*)] 
+    CSS group selector
+-------------------------------------------------------------------------------------------------- 
+Selectors:
+     1.Simple selector
+            Tag selector(tag name)
+            class selector(.classname)
+            id selector(#id)
+            universal selector(*)
+     2.combined selector
+            descendent selector(div with tag name)
+            child selector(div with > tagname)
+            adjacent sibling selector(tag name + tag name)
+            general sibling (tag name ~ tag name)
+     3.pseudo class selector
+            :hover
+            :active
+            :focus
+            :nth child
+            :last child
+            :visited
+    4.pseudo element selector
+            ::before
+            ::after
+            ::first line
+            ::first letter
+    5. Attribute Selector
+            -- to highlight internal link/external link
+
+---------------------------------------------------------------------------------------------------
+CSS box model: 
+    margin
+    border
+    padding
+    content
+---------------------------------------------------------------------------------------------------    
+

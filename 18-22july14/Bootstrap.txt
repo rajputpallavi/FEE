@@ -1,0 +1,8 @@
+Bootstrap is a (CSS Framework )- a free front -end framework for faster and easier web developments.
+It include HTML and CSS design templates for typography, forms, buttons, navigation, modals, image carousels.
+gives u abilty to easily create responsive designs.
+-Two ways to start using Bootstrap on your site.
+>Download Bootstrap from getbootstrap.com 
+>Include Bootstrap from CDN(content delivery network)
+
+Bootstrap has 24 Components
