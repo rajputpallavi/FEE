@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <font color="lightgrey">Over 31 years of currency data.</font>
+    <select>
+        <option value="Countries">Se</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+      </select>
+    
+</body>
+</html> --><!DOCTYPE html>
+<html>
+    <head>
+      <title>Currency Converter</title>
+    </head>
+    <body>
+      <h1>Currency Converter</h1>
+      <form>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount"><br><br>
+        <label for="from">From:</label>
+        <select id="from" name="from">
+          <option value="USD">USD (United States Dollar)</option>
+          <option value="EUR">EUR (Euro)</option>
+          <option value="GBP">GBP (British Pound)</option>
+          <option value="INR">INR (Indian Rupee)</option>
+          <!-- Add more options as needed -->
+        </select><br><br>
+        <label for="to">To:</label>
+        <select id="to" name="to">
+          <option value="USD">USD (United States Dollar)</option>
+          <option value="EUR">EUR (Euro)</option>
+          <option value="GBP">GBP (British Pound)</option>
+          <option value="INR">INR (Indian Rupee)</option>
+          <!-- Add more options as needed -->
+        </select><br><br>
+        <input type="button" value="Convert" onclick="convertCurrency()">
+      </form>
+      <p id="result"></p>
+    
+      <script>
+        function convertCurrency() {
+          var amount = document.getElementById("amount").value;
+          var from = document.getElementById("from").value;
+          var to = document.getElementById("to").value;
+    
+          // Exchange rates (you can update these rates or use an API to get the latest rates)
+          var exchangeRates = {
+            "USD": 1,
+            "EUR": 0.84,
+            "GBP": 0.76,
+            "INR": 74.83
+          };
+    
+          var convertedAmount = amount * exchangeRates[to] / exchangeRates[from];
+    
+          document.getElementById("result").innerHTML = "Converted amount: " + convertedAmount.toFixed(2) + " " + to;
+        }
+      </script>
+    </body>
+    </html>

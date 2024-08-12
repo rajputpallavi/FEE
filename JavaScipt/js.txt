@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------------------------------------------
+JavaScript primitive data types:
+-------------------------------------------------------------------------------------------------------------------
+data type               description
+string                  represents sequence of characters
+number                  represents numeric value e.g. 100
+bigint                  can be used to store integer value that are too big to be represented by normal js number
+boolean                 true/false
+undefined               undefined value
+null                    represents null i.e. no value at all
+---------------------------------------------------------------------------------------------------------------------
+js operators :
+arithmetic: (+,-,*,/,%,)binary, (++,--)unary
+
+comparison(relational):==,===,!=,!==,>=,<=,<
+  == (check only value)
+  ==(check value+datatype)
+
+bitwise:  &,|,^,~,<<,>>,>>>
+
+logical: &&,||,!
+x=16,y=8 -->x&y=False....x&&y=true;
+
+assignment: =,+=,-=,*=,/=,%=
+
+some unique operators--> (compares values and datatype): ===,!==, >>> are also there
+
+special operators--> (?:),in,delete,instanceof,new,typeof,void,yield
