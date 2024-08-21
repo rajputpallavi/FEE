@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            let n1=parseInt(document.getElementById("num1").value);
+            let opr=document.getElementById("opr").value;
+            let n2=parseInt(document.getElementById("num2").value);
+            switch(opr){
+                case '+':
+                res=n1+n2;
+                break;
+                case '-':
+                res=n1-n2;
+                break;
+                case '*':
+                res=n1*n2;
+                break;
+                case '/':
+                res=n1/n2;
+                break;
+                case '%':
+                res=n1%n2;
+                break;
+                default:
+                res="invalid operator"
+            }
+            document.getElementById("rs").value=res;
+            }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr><th colspan="4">Calculator</th></tr>
+        <tr><td colspan="2">Enter a Number</td><td colspan="2"><input type="text" id="num1"></td></tr>
+        <tr><td colspan="2">Operator(+,-,*,/,%)</td><td colspan="2"><input type="text" id="opr"></td></tr>
+        <tr><td colspan="2">Enter second Number</td><td colspan="2"><input type="text" id="num2"></td></tr>
+        <tr><td colspan="2">Result</td><td colspan="2"><input type="text" name="res" id="rs"></td></tr>
+        <tr><th colspan="4"><input type="button" onclick="cal()" value="OK"></th></tr>
+
+    </table>
+    
+</body>
+</html>
