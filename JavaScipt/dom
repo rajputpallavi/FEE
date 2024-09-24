@@ -1,0 +1,18 @@
+DOCUMENT OBJECT MODEL
+what is DOM - it is a programming interface for web Documents
+it is a bridge between html--framework and javascript--functionality using event listener
+Document- it is a ui/interface/website which is seen infront of user
+Events- user interacts with the website like scroll, hover,  click,keypress,reload,hover
+Event listener- function of dom in javascript where it listens the events done by user like onclick,onscroll,onkeypress,onreload,onhover  
+Event triggering 
+Event bubbling--while triggering the childest event/tag , the parent tag/event got disturbed (like during login it automatically got refreshed which is by default).. 
+Event propagation--preventing the bubbling e.g event.preventDefault()
+what is dom node tree--rootest element is <html> and then its nodes and branches and further leaves --this whole structure is dom node tree
+what is nodes
+what are dom methods - getElementBy: Id,ClassName,TagName
+ object-{email:' ' ,pass:' ' }---backend always take data from frontend only in object form
+ list-[' ']
+ callback function- nested function(callback hell) 
+ SYNCHRONOUS programming-line by line execution 
+
+

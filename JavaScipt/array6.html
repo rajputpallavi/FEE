@@ -1,0 +1,124 @@
+<!-- map() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Compute a new array with the full name of each person in the old array: </p>
+    <p id="demo"></p>
+    <script>
+        const persons=[
+        {firstname:"Malcom",lastname:"Reynolds"},
+        {firstname:"Kaylee",lastname:"Fyre"},
+        {firstname:"Jayne",lastname:"Cobb"}
+        ];
+        document.getElementById("demo").innerHTML=persons.map(getFullName);
+        function getFullName(item){
+            return [item.firstname,item.lastname].join(" ");
+        }
+</script>
+    
+</body>
+</html> -->
+<!-- filter() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>JavaScript Arrays</h1>
+    <h2>The filter() Method</h2>
+    <p>Create an array with all array elements that passes a test</p>
+    <p id="demo"></p>
+    <script>
+       // const numbers=[45,4,9,16,25];
+       const numbers=[50,100,130,200,250];
+        const over18=numbers.filter(myFunction);
+        document.getElementById("demo").innerHTML=over18;
+        function myFunction(value){
+           // return value>18;
+           return value>30;
+        }
+    </script>
+    
+</body>
+</html> -->
+
+<!-- reduce() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>JavaScript Arrays</h1>
+    <h2>The reduce() Method</h2>
+    <p>find sum of all numbers in an array:</p>
+    <p id="demo"></p>
+    <script>
+        const numbers=[45,4,9,16,25];
+        let sum=numbers.reduce(myFunction);
+        document.getElementById("demo").innerHTML="The sum is "+sum;
+        function myFunction(total,value){
+            return total+value;
+        }
+    </script>
+    
+</body>
+</html> -->
+<!-- every() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>JavaScript Arrays</h1>
+    <h2>The every() Method</h2>
+    <p>every() method checks if all array values pass the test:</p>
+    <p id="demo"></p>
+    <script>
+        const numbers=[45,4,9,16,25];
+        let allOver18=numbers.every(myFunction);
+        document.getElementById("demo").innerHTML="All over 18 is "+allOver18;
+        function myFunction(value){
+            return value>18;
+        }
+    </script>
+    
+</body>
+</html> -->
+
+<!-- from() -->
+ <!-- the array.from() returns an array object from any object  with a length property or any iterable object-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body><h1>JavaScript Arrays</h1>
+     <h2>The from() Method</h2>
+     <p>return an array object from any object with a length or any iterable object.</p>
+     <p id="demo"></p>
+     <script>
+        const myArray=Array.from("ABCDEFG");
+        document.getElementById("demo").innerHTML=myArray; 
+         const numbers=[45,4,9,16,25];
+         let sum=numbers.reduce(myFunction);
+         document.getElementById("demo").innerHTML="The sum is "+sum;
+         function myFunction(total,value){
+             return total+value;
+         }
+     </script>
+     
+ </body>
+ </html>

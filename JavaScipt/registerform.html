@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <B><H1 >REGISTRATION FORM</H1></B>
+        <BR><BR>
+    <form>
+        <label>Name</label>
+        <input type="text" id="name"/>
+        <br>
+        <br>
+        <label>Roll no.</label>
+        <input type="roll" id="roll"/>
+        <br>
+        <br>
+        <label>Phone no.</label>
+        <input  id="phone"/>
+        <br>
+        <br>
+        <label>DOB</label>
+        <input type="date" id="date"/>
+        <br> <br>
+        <label>Email</label>
+        <input type="email" id="email"/>
+        <br> <br>
+        <label>Address</label>
+        <textarea type="text" id="add"></textarea>
+        <br> <br>
+        <button onclick={handleclick(event)}>Submit</button>
+    </form>
+</center>
+    
+</body>
+<script>
+    function handleclick(event){
+        event.preventDefault();//to prevent the website from default reloading or default refreshing
+        const namef=document.getElementById("name").value;
+        const rollf=document.getElementById("roll").value;
+        const phonef=document.getElementById("phone").value;
+        const dobf=document.getElementById("date").value;
+        const emailf=document.getElementById("email").value;
+        const addf=document.getElementById("add").value;
+        const formdata={name:namef,roll:rollf,phone:phonef,dob:dobf,email:emailf,add:addf};
+        console.log(formdata);
+
+    }
+
+</script>
+
+</html>

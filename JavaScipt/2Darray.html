@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let num=new Array();
+    for(let i=0;i<3;i++){
+        num[i]=new Array();
+    }
+    for(let i=0;i<3;i++){
+        for(let j =0;j<3;j++){
+            num[i][j]=prompt("Enter a number");
+        }
+    }
+    for(let i=0;i<3;i++){
+        for(let j =0;j<3;j++){
+            document.write(num[i][j]+"  ");
+        }
+        document.write("<br>");
+    }
+    document.write(num);
+ </script>
+
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let matrix=new Array();
+    for(let i=0;i<3;i++){
+        matrix[i]=new Array();
+        }
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            matrix[i][j]=parseInt(prompt("enter the number "));
+        }
+    }
+    document.write("Given matrix:");
+    document.write("<br>");
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            document.write(matrix[i][j]+" ");
+        }
+        document.write("<br>");
+    }
+    document.write("Transpose of matrix: ");
+    document.write("<br>");
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            document.write(matrix[j][i]+" ");
+        }
+        document.write("<br>");
+    }
+    document.write("Addition: ");
+    document.write("<br>");
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            document.write(matrix[i][j]+matrix[j][i]+" ");
+        }
+        document.write("<br>");
+    }
+      
+    document.write("Multiplication:");
+    document.write("<br>");
+    let mul=new Array();
+    for(let i=0;i<3;i++){
+        mul[i]=new Array();
+    }
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            mul[i][j]=0;
+            for(let k=0;k<3;k++){
+                mul[i][j]+=matrix[i][k]*matrix[k][j];
+
+            }
+        }
+      
+    }
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            document.write(mul[i][j]+" ");
+        }
+        document.write("<br>");
+    }
+
+ </script>
+
+    
+</body>
+</html>

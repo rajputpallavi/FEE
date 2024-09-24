@@ -1,0 +1,88 @@
+<!-- 
+to create string using string constructor :
+ let str=new String("Chitkara"); 
+to create a literal string using string interpolation :
+ let str2='chitkara';
+ let new str3=`string created using ${str2}`;
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        //string interpolation
+        let str1='Chitkara University';
+        let str2=`I am student of ${str1}`;
+        document.write(str2);
+        document.write("<br>");
+        //empty string
+        let str3='';
+        let str4="";
+        document.write("<br>");
+        //Multiline string
+        let str5=
+        `
+        this
+        is my 
+        string
+        `;
+        document.write(str5);
+        document.write("<br>");
+        //string.length
+        document.write("Length = "+str2.length);
+        document.write("<br>");
+        //escape characters in string to add single quotes, double quotes
+        document.write("I am student of \"Chitkara University\""+"<br>");
+        document.write("I am student of \'Chitkara University'");
+        document.write("<br>");
+        //substring
+        let str='JavaScript tutorial';
+        let strr=str.substring(9,21);
+        document.write(strr);
+        console.log(strr);
+        document.write("<br>");
+        // lowercase and uppercase
+        let upperCase=str.toUpperCase();
+        let lowerCase=str.toLowerCase();
+        document.write(upperCase);
+        document.write("<br>");
+        document.write(lowerCase);
+        document.write("<br>");
+        // index
+        let searchstr=str.indexOf('t');
+        document.write(searchstr);
+        document.write("<br>");
+        //replace
+        let replace=str.replace('JavaScript','HTML');
+        document.write(replace);
+        document.write("<br>");
+        //removing leading and trailing whitespaces using trim() method
+        let c='  Hello       i am Pallavi    .';
+        let d='&nbsp&nbsp &nbsp &nbsp &nbsp   Hello&nbsp &nbsp &nbsp &nbsp        i am Pallavi    .';
+        document.write(d);
+        document.write("<br>");
+        document.write(d.trim());
+        document.write("<br>");
+        let trim=c.trim();
+        document.write(trim);
+        //charAtIndex
+
+        //string comparison
+        let a="John";
+        let b=new String("John");
+        console.log(a==b);//if both are equal then true
+        console.log(a.localeCompare(b));//if both are different then true 
+
+
+         
+
+
+
+    </script>
+    
+ </body>
+ </html>

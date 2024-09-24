@@ -1,0 +1,6 @@
+FUNCTIONS IN JAVASCRIPT 
+-a function is a block of code designed to perform a particular task.
+-we can create a function without a name only if we have to use the function once only 
+function name(parameter1,parameter2,...){
+    //code to be executed
+}

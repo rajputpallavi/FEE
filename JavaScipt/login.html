@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form>
+        <label>Email</label>
+        <input type="email" id="email"/>
+        <br><br>
+        <label>Password</label>
+        <input type="password" id="pass"/>
+        <br><br>
+        <button onclick={handleclick(event)}>Login</button>
+    </form>   
+</center>
+    
+</body>
+<script>
+    function handleclick(event){
+        event.preventDefault();//to prevent the website from default reloading or default refreshing
+        const emailf=document.getElementById("email").value;
+        const passf=document.getElementById("pass").value;
+        const formdata={email:emailf,pass:passf};
+        console.log(formdata); 
+    }
+
+</script>
+
+</html>

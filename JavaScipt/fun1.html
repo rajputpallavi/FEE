@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fun1.js"></script>
+    <!-- <script>
+        function calculate(){
+            let n=document.getElementById("num").value;
+            let count=CountDigit(num);
+            let sum=sumDigit(num);
+            let rev=revNumber(num);
+            document.getElementById("digit").value=count;
+            document.getElementById("sum").value=sum;
+            document.getElementById("rev").value=rev;
+
+        }
+    </script> -->
+    <script>
+    function calculate()
+    {
+      let num=document.getElementById("num").value;
+      let count=CountDigit(num);
+      let sum=sumDigits(num);
+      let rev=RevNumber(num);
+      document.getElementById("digit").value=count;
+      document.getElementById("sum").value=sum;
+      document.getElementById("rev").value=rev;
+      //document.write("Count="+count);
+      //document.write("Sum="+sum);
+      //document.write("Reverce="+rev);
+    }
+</script>
+</head>
+<body>
+
+   <!-- <center> <table border="=1">
+        <tr><th colspan="4">Calculator</th></tr>
+        <tr><td colspan="2"> Enter a number </td><td colspan="2"><input type="text" id="num"></td></tr>
+        <tr><td colspan="2"> Sum of digit </td><td colspan="2"><input type="text" id="sum"></td></tr>
+        <tr><td colspan="2"> No of digit </td><td name="digit" id="digit" colspan="2"></td></tr>
+        <tr><td colspan="2"> Reverse of Number </td><td name="rev" id="rev" colspan="2"></td></tr>
+        <tr><td colspan="4"><center><button id="cal" onclick="calculate()">CALCULATE</button></center></td></tr>
+       
+    </table>
+    </center> -->
+    <center>
+    <table border="1">
+        <tr>
+            <td>Enter a Number</td>
+            <td><input type="text" id="num"></td>
+        </tr>
+        <tr>
+            <td>No of Digits</td>
+            <td><input type="text" id="digit"></td>
+        </tr>
+        <tr></tr>
+            <td>Sum of Digits</td>
+            <td><input type="text" id="sum"></td>
+        </tr>
+        <tr></tr>
+            <td>Reverse of Number</td>
+            <td><input type="text" id="rev"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><center><input type="button" value="Calculate" onclick="calculate()"></center></td>
+        </tr>
+    </table>
+    </center>
+ 
+    
+</body>
+</html>

@@ -26,3 +26,21 @@ assignment: =,+=,-=,*=,/=,%=
 some unique operators--> (compares values and datatype): ===,!==, >>> are also there
 
 special operators--> (?:),in,delete,instanceof,new,typeof,void,yield
+----------------------------------------------------------------------------------------------------------
+Array is a data structure used to store multiple values in a single variable. 
+It can hold various data types and allows for dynamic resizing.
+elements are accessed by their index,starting from 0
+
+let num=[1,2,3,4]   //creating an array using Array literal
+let num = new Array()  //creating an array using JavaScript new keyword (array constructor )
+-----------------------------------------------------------------
+ARRAY iteration methods forEach
+* forEach() method calls a function for each element in an array
+* forEach() method not used in empty array
+array.forEach(currentvalue,index,arr),this value)
+* forEach()
+* Map()
+* filter()-->that works on a specified condition
+* reduce()
+* every()
+* from()
