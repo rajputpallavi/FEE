@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function myfunction(){
+        let name=document.getElementsByName("name");
+        document.write("My name is : "+name[0].value+" "+name[1].value); 
+       }
+    </script>
+</head>
+<body>
+    <p><h1>Write() method and get element by ID method </h1></p>
+    Enter your first name:<input type="text" name="name" id="fname"><br>
+    Enter your last name:<input type="text" name="name" id="lname"><br>
+     <input type="button" value="OK" onclick="myfunction()">  
+</body>
+</html>

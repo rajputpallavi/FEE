@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document Object </h1>
+    <h2>The getElementByTagName() Method</h2>
+    <p>An unordered list</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>The innerHTML of second li element is: </p>
+    <p id="demo"></p>
+    <script>
+        const collection=document.getElementsByTagName("h1");
+        document.getElementById("demo").innerHTML=collection[0].innerHTML+ collection[1].innerHTML+ collection[2].innerHTML;
+    </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The document object</h1>
+    <h2>the getElementByClassName() method</h2>
+    <p>change the text of the first element with class="example": </p>
+    <div class="example">Element1</div>
+    <div class="example">Element2</div>
+    <script>
+        const collection=document.getElementsByClassName("example");
+        collection[0].innerHTML="Hello World";//element 1 is getting updated
+        collection[1].innerHTML="JavaScript";
+    </script>
+
+    
+</body>
+</html> -->

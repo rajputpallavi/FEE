@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><H1><font color="red">UTILITY BILL</font></H1>
+    <table>
+        <tr><td colspan="2">Statement Date</td>
+            <td colspan="2">Account No.</td></tr>
+        <tr><td colspan="2"><input type="text" id="date"></td>
+            <td colspan="2"><input type="text" id="accno"></td></tr>
+        <tr><td colspan="4">Account Name</td></tr>
+        <tr><td colspan="4"><input type="text" id="accname" size="47"></td></tr>
+        <tr><td colspan="4">Address:</td></tr>
+        <tr><td colspan="4"><textarea type="text" id="add" rows="3" cols="45"></textarea></td></tr>
+        <tr><td colspan="2">Start Date</td><td colspan="2">End Date</td></tr>
+        <tr><td colspan="2"><input type="text" id="startdate">
+        </td><td colspan="2"><input type="text" id="enddate"></td></tr>
+        <tr><td colspan="2">Start Reading</td><td colspan="2">End Reading</td></tr>
+        <tr><td colspan="2"><input type="text" id="startread">
+        </td><td colspan="2"><input type="text" id="endread"></td></tr>
+       </table>
+     <button onclick="mybill()">SUBMIT</button>
+    </center>
+    <script>
+        class Customer{
+            constructor(statementdatef,accnof,accnamef,addf,startdatef,enddatef,startreadf,endreadf){
+                this.statementdatef=statementdatef;
+                this.accnof=accnof;
+                this.accnamef=accnamef;
+                this.addf=addf;
+                this.startdatef=startdatef;
+                this.enddatef=enddatef;
+                this.startreadf=startreadf;
+                this.endreadf=endreadf;
+            }
+            showdetail(){
+                return (this.accnamef+" "+this.accnof+" "+this.addf+" "+this.startdatef);
+
+            }
+        }
+        function mybill(){
+            let statementdatef=document.getElementById("date").value;
+            let accnof=document.getElementById("accno").value;
+            let accnamef=document.getElementById("accname").value;
+            let addf=document.getElementById("add").value;
+            let startdatef=document.getElementById("startdate").value;
+            let enddatef=document.getElementById("enddate").value;
+            let startreadf=document.getElementById("startread").value;
+            let endreadf=document.getElementById("endread").value;
+            let customerdata=new Customer(statementdatef,accnof,accnamef,addf,startdatef,enddatef,startreadf,endreadf);
+            document.write(customerdata.showdetail());
+
+        }
+        
+
+    </script>
+</body>
+</html>

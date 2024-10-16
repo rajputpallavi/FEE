@@ -1,0 +1,32 @@
+<!-- Json is JavaScript Object Notation
+ API is an application programming interface designed for lightweight data interchange(text-based format) between two computer applications operating on same hardware or between diffrent computers
+ The API describes how users shouolld requests, capture,or modify data and how the server respond  to those requests
+ It aims at speeding up http service  
+ in JSON, keys must be strings, written with double quotes:
+ {"name":"John"}
+
+ difference in javascript onject and JSON
+ javascript:  {name:"John",city:"rajpura"}
+ JSON:  {"name":"John","city":"rajpura"} 
+
+
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2>Creating an object from JSON String</h2>
+    <p id="demo"></p>
+    <script>
+        const txt='{"name":"John","age":"30","city":"New York"}'
+        const obj=JSON.parse(txt);
+        document.getElementById("demo").innerHTML=obj.name+","+obj.age;
+     
+    </script>
+    
+ </body>
+ </html>

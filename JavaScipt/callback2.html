@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Back</title>
+<script type="text/javascript">
+function count(num,callback)
+ {
+//var num=parseInt(document.getElementById("num1").value);
+var count=0;
+let num1=num;
+while(num>0) {
+ count++;
+ num=parseInt(num/10);
+ }
+ document.write("<br>No of Digits="+count);
+ callback(num1);
+ }
+function sumofdigit(num)
+{//var num=parseInt(document.getElementById("num1").value);
+var sum=0;
+num2=num;
+while(num>0)
+{ sum=sum+num%10;
+ num=parseInt(num/10);
+}
+document.write("<br>Sum of Digit="+sum);
+revofdigit(num);
+}
+
+function revofdigit(num)
+ {
+ var rev=0;
+ while(num>0)
+{
+ rev=rev*10+num%10;
+ num=parseInt(num/10);
+ }
+  document.write("<br>Reverse of Number="+rev);
+}
+function getdata()
+{
+var num=parseInt(document.getElementById("num1").value);
+ //count(num,sumofdigit);
+ count(num,revofdigit);
+}
+</script>
+</head>
+<body>
+Enter a number : <input type="text" name="numb1" id="num1"><br>
+<input type="button" value="OK" onclick="getdata()">
+</body>
+</html>

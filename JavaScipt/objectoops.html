@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating objects by giving literals
+        let p={name:"Pallavi Thakur",age:"20",Address:"Chandigarh"};
+      document.write("Object p = "+p.name+" "+p.Address);
+      document.write("<br>");
+      //creating object by creating a blank first
+      let person={};
+      person.firstname="Rakesh";
+      person.lastname="Thakur";
+      person.city="rajpura";
+      document.write(person.firstname+" "+person.lastname+" "+person.city);
+      document.write("<br>");
+      //creating objects with the help of constructor(preferred)
+      let p1=new Object();
+      p1.name="Arjun";
+      p1.class=12;
+      p1.age=16;
+      document.write(p1.name+" "+p1.age+" "+p1.class);
+      //accessing java properties
+      document.write("<br>");
+      //1
+      document.write(person.firstname);
+      document.write("<br>");
+      //2
+      document.write(person["lastname"]);
+      //deleting a property
+      delete person.city;
+      //adding a property 
+      person.nationality="Indian";
+
+    </script>
+</body>
+</html>

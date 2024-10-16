@@ -1,0 +1,27 @@
+
+[
+    {
+        "Roll no":1223,
+        "Name":"Ravi",
+        "Course":"Btech",
+        "Semester":"2"
+    },
+    {
+        "Roll no":1256,
+        "Name":"Ram",
+        "Course":"Btech",
+        "Semester":"6"
+    },
+    {
+        "Roll no":1003,
+        "Name":"Arjun",
+        "Course":"Btech",
+        "Semester":"1"
+    },
+    {
+        "Roll no":3303,
+        "Name":"Gautam",
+        "Course":"Btech",
+        "Semester":"2"
+    }
+]

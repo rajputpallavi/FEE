@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //an object can have a value but also it can have function 
+        let person={};
+        person.firstname="Pallavi";
+        person.lastname="Thakur";
+        person.age=20;
+        person.fullname=function(){
+            return(this.firstname+" "+this.lastname);
+        };
+        document.write("My Full name is "+person.fullname());
+        document.write("<br>");
+        //nested objects
+        let myobj={
+            name:"john",age:30,myCars:{
+                car1:'Ford',
+                car2:"BMW",
+                car3:"Fiat",
+                carinfo:function(){
+                    return("My name is "+myobj.name+" "+"and i love cars: "+myobj.myCars.car1+" "+myobj.myCars.car2+" "+myobj.myCars.car3);
+                }
+            }
+        }
+       
+        document.write(myobj.name+"<br>");
+        document.write(myobj.age+"<br>");
+        document.write(myobj.myCars.carinfo());
+        document.write("<br>");
+        //nested objects are accessed as:
+        document.write(myobj.myCars.car1+" "+myobj.myCars.car2+" "+myobj.myCars.car3);
+    </script>
+    
+</body>
+</html>

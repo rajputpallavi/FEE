@@ -1,0 +1,22 @@
+oops with paradigm and its feature:-
+----------------------------------------
+1.abstraction: Abstraction is the process of exposing only the necessary information to the outside world while hiding the internal implementation details.
+2.Encapsulation: wrapping up the functions,classes and data member and function member.the concept of bundling data and methods that operate on that data within a single unit, called a class or object.
+3.Data hiding: process of encapsulating data within an object, making it private and inaccessible to external entities. 
+4.class:user defined data type which conatins data member and function member
+5.object:a most important dataype and building blocks for JavaScript. It is a collection of related data and  functions lnown as properties and methods.properties are "key:value" pair and methods are functions. 
+6.Inheritance: allowing one class to inherit the properties and behavior of another class. It is a mechanism that enables code reuse and facilitates the creation of a hierarchy of classes.
+7.Polymorphism:It is the ability of an object to take on multiple forms, depending on the context in which it is used.
+8.Message passing:Message passing is the process by which objects send and receive messages to and from each other.
+-----------------------------------------------------------------------------------------------------------------------
+
+The objects can not only contain the data but it can also create a function.
+Nested Objects:
+-------------------
+myobj={
+    name:"john",age:30,myCars:{
+        car1:'Ford',
+        car2:"BMW",
+        car3:"Fiat"
+    }
+}

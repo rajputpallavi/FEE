@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medium Clone</title>
+	<style>
+		body {
+			background-color: maroon;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #8c0f0f; /* slightly dark red color */
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		.navbar {
+			background-color: #8c0f0f;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.navbar a {
+			color: white;
+			text-decoration: none;
+			margin-right: 20px;
+		}
+		.navbar a:hover {
+			color: #ccc;
+		}
+		.header-text {
+			color: white;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.get-started-btn {
+			background-color: #efe3e3;
+			color: rgb(203, 2, 2);
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.get-started-btn:hover {
+			background-color: #cb793a;
+		}
+		.feature-boxes {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 50px;
+		}
+		.feature-box {
+			background-color: #8e1010;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 25%;
+		}
+		.feature-box h3 {
+			color: white;
+			margin-bottom: 10px;
+		}
+		.feature-box p {
+			color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<span class="header-text">Medium Clone</span>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Discover</a>
+				<a href="#">Write</a>
+				<a href="#">Sign in</a>
+			</nav>
+		</div>
+		<h2 style="text-align: center; color: white;">Share your voice</h2>
+		<center><a href="register.html"><button class="get-started-btn">Get Started</button></a></center>
+		<div class="feature-boxes">
+			<div class="feature-box">
+				<h3>Write with ease</h3>
+				<p>A clear, minimalistic editor designed for gree writing.</p>
+			</div>
+			<div class="feature-box">
+				<h3>Publish Instantly</h3>
+				<p>Here publish your content and reach your audience.</p>
+			</div>
+			<div class="feature-box">
+				<h3>Connect with readers</h3>
+				<p>Connect with people and interact all around the world. </p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
