@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        //check browser support
+        if(typeof(Storage)!="undefined"){
+            //store
+            localStorage.setItem("firstname","Pallavi");
+            localStorage.setItem("lastname","Smith");
+          
+            //Retrieve
+            document.getElementById("result").innerHTML=localStorage.getItem("firstname")+" "+localStorage.getItem("lastname");
+           // document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+        }
+        else{
+            document.getElementById("result").innerHTML="Sorry, your browser does not support web storage...";
+        }
+    </script>
+    
+</body>
+</html>
